@@ -12,6 +12,7 @@ router.get("/home", homeController.home);
 router.use("/user", require("./user"));
 router.use("/posts", require("./post"));
 router.use("/comments", require("./comments"));
+router.use('/likes',require('./likes'));
 
 //telling the router about the api
 router.use('/api',require('./api'));

@@ -51,7 +51,15 @@ module.exports.home = async function (req, res) {
         populate: {
           path: "user",
         },
-      });
+        populate:{
+          path:"Likes"
+        }
+      }).populate('comments')
+      .populate('Likes');
+
+
+      console.log("checking for populated", posts);
+      
       if(req.xhr){
         console.log('send from the xhr');
         return res.status(200).json({
