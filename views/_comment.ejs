@@ -1,6 +1,9 @@
-<li id="post-comment-<%=comment._id%>">
+<li id="comment-<%=comment._id%>">
+  <% console.log("989898",locals.user) %>
+  <% console.log("89898",comment.user) %>
   <p>
-    <% if(locals.user && locals.user.id == comment.user.id){ %>
+    
+    <% if(locals.user && locals.user.id == comment.user){ %>
     <small>
       <a
         class="delete-comment-button"

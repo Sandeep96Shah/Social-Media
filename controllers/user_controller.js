@@ -62,10 +62,12 @@ module.exports.signIn = function (req, res) {
   if (req.isAuthenticated()) {
     return res.redirect("/user/profile");
   }
+  
   return res.render("user_sign_in", {
     title: "Codeial | Sign-In",
   });
 };
+
 
 //get the sign-Up data
 module.exports.create = function (req, res) {
@@ -120,11 +122,11 @@ module.exports.createSession = function (req, res) {
   //this is one of the way to do the flash
   //and the other is by using the middleware
   //return res.redirect('/home',{flash: {success:""}})
-  return res.redirect("/home");
+  return res.redirect("/");
 };
 
 module.exports.destroySession = function (req, res) {
   req.logout();
   req.flash("success", "logged out successfully");
-  return res.redirect("/home");
+  return res.redirect("/");
 };

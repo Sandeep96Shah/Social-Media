@@ -8,7 +8,7 @@ const homeController = require("../controllers/home_controller");
 
 console.log("index Router is called");
 
-router.get("/home", homeController.home);
+router.get("/", homeController.home);
 router.use("/user", require("./user"));
 router.use("/posts", require("./post"));
 router.use("/comments", require("./comments"));
