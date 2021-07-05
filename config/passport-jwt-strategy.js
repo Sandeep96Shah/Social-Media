@@ -1,6 +1,6 @@
 //acquiring the passport ibrary
 const passport = require("passport");
-
+const env = require('./environment');
 //this is to get the strategy
 const JWTStrategy = require("passport-jwt").Strategy;
 
@@ -14,7 +14,7 @@ let opts = {
     //header has a key called auth and inside auth Bearer is a key where the token(JWT) is present
   jwtFromRequest: ExtractJWT.fromAuthHeaderAsBearerToken(),
   //this id for the  decryption
-  secretOrKey: "codeial",
+  secretOrKey: env.jwt_secret,
 };
 
 passport.use(

@@ -8,11 +8,12 @@ const homeController = require("../controllers/home_controller");
 
 console.log("index Router is called");
 
-router.get("/", homeController.home);
+
 router.use("/user", require("./user"));
 router.use("/posts", require("./post"));
 router.use("/comments", require("./comments"));
 router.use('/likes',require('./likes'));
+router.get("/", homeController.home);
 
 //telling the router about the api
 router.use('/api',require('./api'));
