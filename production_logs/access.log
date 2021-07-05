@@ -8,3 +8,5 @@
 ::1 - - [05/Jul/2021:06:07:03 +0000] "GET /user/auth/google/callback?code=4%2F0AX4XfWi3CRlQkUkfI2UIwGMjrcXo7CBdGMl_U6IOumwY90QGqfliKl_tQ8lHV4ANi1LSUQ&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+openid&authuser=3&prompt=consent HTTP/1.1" 302 46 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
 ::1 - - [05/Jul/2021:06:07:03 +0000] "GET / HTTP/1.1" 200 4536 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
 ::1 - - [05/Jul/2021:06:07:04 +0000] "GET //ws HTTP/1.1" 404 142 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
+::ffff:192.168.2.106 - - [05/Jul/2021:07:58:50 +0000] "GET / HTTP/1.1" 200 2947 "-" "Avast Antivirus"
+::ffff:192.168.2.106 - - [05/Jul/2021:07:58:50 +0000] "GET / HTTP/1.1" 200 2947 "-" "Avast Antivirus"

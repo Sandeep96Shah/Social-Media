@@ -7,7 +7,8 @@ const logger = require('morgan');
 //adding the cookieParser
 const cookieParser = require("cookie-parser");
 //port
-const port = 8000;
+//heroku
+const port = process.env.PORT || 8000;
 
 //adding all the functionlaity of express in app
 const app = express();
